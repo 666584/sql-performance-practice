@@ -46,9 +46,12 @@ AS AVERAGE_FEE
 ---
 
 ## 4️⃣ 최종 SQL
+
+```
 SELECT ROUND(AVG(daily_fee), 0) AS AVERAGE_FEE
 FROM CAR_RENTAL_COMPANY_CAR
 WHERE car_type = 'SUV';
+```
 
 ---
 
