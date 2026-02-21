@@ -23,6 +23,7 @@
 
 ```sql
 WHERE car_type = 'SUV'
+```
 
 문자열 비교 시 작은따옴표 ' ' 사용이 표준적이며 안전하다.
 더블쿼트 " " 는 DB 설정에 따라 다르게 동작할 수 있다.
@@ -41,15 +42,15 @@ ROUND(AVG(daily_fee), 0)
 AS AVERAGE_FEE
 
 출력 컬럼 이름을 문제 요구사항에 맞게 지정한다.
----
 
+---
 
 ## 4️⃣ 최종 SQL
 SELECT ROUND(AVG(daily_fee), 0) AS AVERAGE_FEE
 FROM CAR_RENTAL_COMPANY_CAR
 WHERE car_type = 'SUV';
----
 
+---
 
 ## 5️⃣ 실행 흐름 (SQL 처리 순서 기준 사고 과정)
 
@@ -62,10 +63,10 @@ AVG → 필터링된 데이터의 평균 계산
 ROUND → 평균값 반올림
 
 SELECT → 결과 출력 및 별칭 적용
+
 ---
 
-
-##📌 배운 점
+## 📌 배운 점
 
 문자열 비교는 작은따옴표 사용이 표준이다.
 
